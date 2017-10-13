@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+
+		<script type="text/javascript" src="caman.full.min.js"></script>
+
+	</head>
+	<body>
+		<img id="my-image" src="test-image.png">
+		<br>
+		<button onclick="revertFilter()">Revert</button>
+		<button onclick="applyFilter()">Add Filter</button>
+		<br>
+
+
+		<div id="slidecontainer">
+		  <input type="range" min="1" max="100" value="50" class="slider" onchange="applySaturation(value)" id="myRange">
+
+		  <p>Value: <span id="demo"></span></p>
+		</div>
+
+
+		<script type="text/javascript" src="index.js"></script>
+	</body>
+</html>
