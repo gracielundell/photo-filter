@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -17,10 +16,11 @@
 
 
 		<div id="slidecontainer">
-		  <input type="range" min="1" max="100" value="50" class="slider" onchange="applySaturation(value)" id="myRange">
-
+		  <input type="range" min="1" max="100" value="50" class="slider" onfocus="this.oldvalue = this.value;" onchange="onChangeTest(this)" id="myRange">
 		  <p>Value: <span id="demo"></span></p>
 		</div>
+
+
 
 
 		<script type="text/javascript" src="index.js"></script>
